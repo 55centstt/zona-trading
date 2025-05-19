@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zona Trading</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png.jpeg" alt="Zona Trading Logo" class="logo"/>
+    <h1>Zona Trading</h1>
+    <input type="text" id="searchBar" placeholder="Buscar artículos..."/>
+  </header>
+
+  <section id="form-section">
+    <h2>Enviar artículo</h2>
+    <form id="articleForm">
+      <input type="text" id="title" placeholder="Título del artículo" required />
+      <textarea id="content" placeholder="Contenido del artículo" required></textarea>
+      <input type="text" id="category" placeholder="Categoría (ej: Cripto, Bolsa...)" required />
+      <input type="file" id="image" accept="image/*" />
+      <button type="submit">Publicar</button>
+    </form>
+  </section>
+
+  <section id="filters">
+    <button data-category="Todos">Todos</button>
+    <button data-category="Cripto">Cripto</button>
+    <button data-category="Bolsa">Bolsa</button>
+    <button data-category="Forex">Forex</button>
+  </section>
+
+  <section id="articles-container">
+    <!-- Artículos aparecerán aquí -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zona Trading. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
